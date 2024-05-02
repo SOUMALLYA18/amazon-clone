@@ -9,15 +9,11 @@ const Registration = () => {
   const [password, setPassword] = useState("");
   const [cPassword, setCPassword] = useState("");
 
-  // Error Message start
   const [errClientName, setErrClientName] = useState("");
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
   const [errCPassword, setErrCPassword] = useState("");
-  // Loading State start
 
-
-  // Handle funtion start
   const handleName = (e) => {
     setClientName(e.target.value);
     setErrClientName("");
@@ -25,7 +21,6 @@ const Registration = () => {
   const handleEmail = (e) => {
     setEmail(e.target.value);
     setErrEmail("");
-  
   };
   const handlePassword = (e) => {
     setPassword(e.target.value);
@@ -36,14 +31,12 @@ const Registration = () => {
     setErrCPassword("");
   };
 
-  // Email validation start
   const emailValidation = (email) => {
     return String(email)
       .toLowerCase()
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
 
-  // Submit button start
   const handleRegistration = (e) => {
     e.preventDefault();
     if (!clientName) {
@@ -80,7 +73,6 @@ const Registration = () => {
       cPassword &&
       cPassword === password
     ) {
-      // =========== Firebase Registration End here ===============
       setClientName("");
       setEmail("");
       setPassword("");
@@ -135,7 +127,6 @@ const Registration = () => {
                     {errEmail}
                   </p>
                 )}
-                
               </div>
               <div className="flex flex-col gap-2">
                 <p className="text-sm font-medium">Password</p>

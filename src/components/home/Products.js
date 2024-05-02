@@ -98,15 +98,6 @@ const Products = () => {
               Add to Cart
             </button>
           </div>
-          {/* ========== Product Info End here ================= */}
-          {/* ============ Product Image Start here ======== */}
-
-          {/* ============ Product drop-down Start here ==== */}
-          {/* ============ Product drop-down End here ====== */}
-
-          {/* ============ Product Image End here ========== */}
-          {/* ============ Product Info Start here ========= */}
-          {/* ============ Product Info End here =========== */}
         </div>
       ))}
     </div>
